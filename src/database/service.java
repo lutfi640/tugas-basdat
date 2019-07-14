@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import aplikasi.PenjualData;
+import aplikasiLama.PenjualData;
 /**
  *
  * @author AtlantisSeeker

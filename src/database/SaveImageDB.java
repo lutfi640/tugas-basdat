@@ -7,7 +7,7 @@ package database;
 
 import database.service;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
-import aplikasi.PenjualGui;
+import aplikasiLama.PenjualGui;
 import java.sql.SQLException;
 
 /**

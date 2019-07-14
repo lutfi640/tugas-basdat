@@ -11,8 +11,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import aplikasi.PenjualGui;
-import aplikasi.PenjualData;
+import aplikasiLama.PenjualGui;
+import aplikasiLama.PenjualData;
 /**
  *
  * @author AtlantisSeeker
