@@ -39,7 +39,20 @@ public class Kategori extends javax.swing.JFrame {
         AkunBTN = new javax.swing.JLabel();
         LogoutBTN = new javax.swing.JLabel();
         BlackBar = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLGambar = new javax.swing.JLabel();
+        namaBarang = new javax.swing.JLabel();
+        Harga = new javax.swing.JLabel();
+        Quantity = new javax.swing.JTextField();
+        Btn_incQty = new javax.swing.JButton();
+        Btn_decQty = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtKeterangan = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
+        bantu = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,9 +99,66 @@ public class Kategori extends javax.swing.JFrame {
         BlackBar.setText("jLabel1");
         Buku.add(BlackBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 70));
 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        Buku.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 310, 530, 450));
+
+        jLGambar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Buku.add(jLGambar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 270, 320));
+
+        namaBarang.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        namaBarang.setText("Nama Barang");
+        Buku.add(namaBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 140, -1));
+
+        Harga.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Harga.setText("Harga");
+        Buku.add(Harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, -1, -1));
+
+        Quantity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Quantity.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Quantity.setText("0");
+        Buku.add(Quantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 30, -1));
+
+        Btn_incQty.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Btn_incQty.setText("+");
+        Buku.add(Btn_incQty, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 410, -1, -1));
+
+        Btn_decQty.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Btn_decQty.setText("-");
+        Buku.add(Btn_decQty, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setText("Jumlah");
+        Buku.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, -1, -1));
+
+        txtKeterangan.setColumns(20);
+        txtKeterangan.setRows(5);
+        jScrollPane2.setViewportView(txtKeterangan);
+
+        Buku.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 610, 600, 130));
+
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/" + kategori + ".png")));
         jLabel6.setText("jLabel2");
         Buku.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 800));
+
+        bantu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Buku.png"))); // NOI18N
+        bantu.setText("jLabel2");
+        Buku.add(bantu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 800));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/" + kategori + ".png")));
+        jLabel7.setText("jLabel2");
+        Buku.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 800));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -124,9 +194,6 @@ public class Kategori extends javax.swing.JFrame {
 //        Rumahtangga.setVisible(false);
 //        MyAkun.setVisible(false);
 //        MyCart.setVisible(false);
-        HalamanUtama h = new HalamanUtama();
-        h.setVisible(true);
-        
     }//GEN-LAST:event_BlanjaaBTNMouseClicked
 
     private void CartBTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartBTNMouseClicked
@@ -196,11 +263,24 @@ public class Kategori extends javax.swing.JFrame {
     private javax.swing.JLabel AkunBTN;
     private javax.swing.JLabel BlackBar;
     private javax.swing.JLabel BlanjaaBTN;
+    private javax.swing.JButton Btn_decQty;
+    private javax.swing.JButton Btn_incQty;
     private javax.swing.JPanel Buku;
     private javax.swing.JLabel CartBTN;
     private javax.swing.JLabel CloseBTN;
+    private javax.swing.JLabel Harga;
     private javax.swing.JLabel LogoutBTN;
     private javax.swing.JLabel MinBTN;
+    private javax.swing.JTextField Quantity;
+    private javax.swing.JLabel bantu;
+    private javax.swing.JLabel jLGambar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel namaBarang;
+    private javax.swing.JTextArea txtKeterangan;
     // End of variables declaration//GEN-END:variables
 }

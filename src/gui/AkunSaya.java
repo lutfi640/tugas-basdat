@@ -250,7 +250,7 @@ public class AkunSaya extends javax.swing.JFrame {
     }//GEN-LAST:event_MyCartBTNMouseClicked
 
     private void LogoutTombolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutTombolMouseClicked
-//        LogoutPopUp.setVisible(true);
+        LogoutPopUp.setVisible(true);
     }//GEN-LAST:event_LogoutTombolMouseClicked
 
     private void TidakMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TidakMouseClicked

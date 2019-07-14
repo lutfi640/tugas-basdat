@@ -98,6 +98,11 @@ public class PenjualGui extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        jTableItem.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTableItemMouseClicked(evt);
+            }
+        });
         jScrollpane1.setViewportView(jTableItem);
 
         getContentPane().add(jScrollpane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(346, 80, -1, 276));
@@ -179,6 +184,10 @@ public class PenjualGui extends javax.swing.JFrame {
     private void jButtonHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHapusActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonHapusActionPerformed
+
+    private void jTableItemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableItemMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTableItemMouseClicked
 
     /**
      * @param args the command line arguments

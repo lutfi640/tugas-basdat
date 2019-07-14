@@ -258,7 +258,8 @@ public class HalamanUtama extends javax.swing.JFrame {
 //        Fashion.setVisible(false);
 //        Buku.setVisible(false);
 //        Rumahtangga.setVisible(false);
-//        MyAkun.setVisible(true);
+        AkunSaya AS = new AkunSaya();
+        AS.setVisible(true);
 //        MyCart.setVisible(false);
     }//GEN-LAST:event_AkunBTNMouseClicked
 
